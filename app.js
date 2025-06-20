@@ -7,14 +7,19 @@ const errorHandler = require('./middleware/errorHandler');
 
 dotenv.config();
 
-connectDB();
+//connectDB();
+
+console.log(process.env.MONGO_URI);
+console.log(1234);
+
+
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-app.use('/api/auth', authRoutes);
+//app.use('/api/auth', authRoutes);
 
 app.use(errorHandler);
 
