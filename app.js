@@ -7,19 +7,14 @@ const errorHandler = require('./middleware/errorHandler');
 
 dotenv.config();
 
-//connectDB();
-
-console.log(process.env.PORT);
-console.log(1234);
-
-
+connectDB();
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-//app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 app.use(errorHandler);
 
