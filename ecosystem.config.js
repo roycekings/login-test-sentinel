@@ -7,8 +7,12 @@ module.exports = {
     watch: false,
     max_memory_restart: "1G",
     env: {
-      NODE_ENV: "production",
-      PORT: 5000
+      PORT: 5000,
+      MONGO_URI: 'mongodb://root:root@192.168.100.1:27017/loginDb?authSource=admin&directConnection=true',
+      JWT_SECRET:'your_jwt_secret_key',
+      JWT_EXPIRE: '30d'
+
+
     }
   }]
 }
