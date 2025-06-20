@@ -9,7 +9,7 @@ dotenv.config();
 
 //connectDB();
 
-console.log(process.env.MONGO_URI);
+console.log(process.env.PORT);
 console.log(1234);
 
 
